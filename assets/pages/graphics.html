@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--NORMALIZE CSS-->
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <!--STYLES CSS-->
+    <link rel="stylesheet" href="../styles/styles-plataform.css">
+    <title>DACARTELECOM VENTAS</title>
+</head>
+<body>
+    
+    <nav>
+
+        <div class="nav-top">
+
+            <div class="logo">
+
+                <img src="../img/dacartelecom-logo.webp">
+    
+            </div>
+    
+            <div class="user">
+    
+                <div>
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                </div>
+    
+                <div>
+                    <ion-icon name="log-out-outline"></ion-icon>
+                </div>
+    
+            </div>
+            
+        </div>
+        
+    </nav>
+    
+    <main>
+
+        <section class="nav-left">
+
+            <div>
+                <a href="#">
+                    <ion-icon name="analytics-outline"></ion-icon>
+                </a>
+            </div>
+
+            <div>
+                <a href="./input-data.html">
+                    <ion-icon name="pencil-outline"></ion-icon>
+                </a>
+            </div>
+
+            <!-- <div>
+                <a href="">
+                    <ion-icon name="cloud-upload-outline"></ion-icon>
+                </a>
+            </div> -->
+
+        </section>
+
+        <section class="container">
+            
+            <div class="search-section">
+                <div>
+                    <h2>Porcentajes de ventas</h2>
+                </div>
+                <div>
+                    <p>Fecha desde:</p>
+                    <input type="date" id="date-uno-campaña">
+                </div>
+                <div>
+                    <p>hasta:</p>
+                    <input type="date" id="date-dos-campaña">
+                    <form id="search">
+                        <button>search</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="measurer">
+                <div>
+                    <p>Datos de venta</p>
+                    <div>
+                        <h3 id="data-venta">0</h3>
+                        <p>Venta</p>
+                    </div>
+                    <div>
+                        <h3 id="data-meta">0</h3>
+                        <p>Meta</p>
+                    </div>
+                </div>
+                <div class="measurer">
+                    <div class="card">
+                        <div class="box">
+                            <div class="percent" id="measurer">
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70" style="--i:0;"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>0<span>%</span></h2>
+                                </div>
+                            </div>
+                            <h2 class="text">Porcentaje</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+</body>
+
+    <!--CHARTS.JS PARA CREAR GRAFICAS-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0/chartjs-plugin-datalabels.min.js" integrity="sha512-R/QOHLpV1Ggq22vfDAWYOaMd5RopHrJNMxi8/lJu8Oihwi4Ho4BRFeiMiCefn9rasajKjnx9/fTQ/xkWnkDACg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!--IONICONS-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--SCRIPT-->
+    <script src="../js/main.js"></script>
+
+</html>
