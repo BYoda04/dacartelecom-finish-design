@@ -13,19 +13,28 @@
 <body>
     
 
-    <form action="./assets/php/validar.php" method="post">
+    <div class="father">
+        <form action="javascript:void(0);" method="post">
 
-        <h2>dacartelecom ventas</h2>
-        <div>
-
-            <p>user <input type="text" placeholder="USER" name="user"></p>
-            <p>password <input type="password" placeholder="password" name="password"></p>
-
-            <button>login</button>
-
-        </div>
-
-    </form>
+            <div>
+                <img src="./assets/img/dacartelecom-logo.webp" alt="dacartelecom">
+                <div>
+        
+                    <select name="roles" id="roles">
+                        <option value="">supervisor</option>
+                        <option value="">supervisor en jefe</option>
+                        <option value="">jefe</option>
+                    </select>
+                    <p>user <input type="text" placeholder="user" name="user" id="user"></p>
+                    <p>password <input type="password" placeholder="password" name="password" id="password"></p>
+        
+                    <button type="submit" id="login">login</button>
+        
+                </div>
+            </div>
+    
+        </form>
+    </div>
 
 
 </body>
